@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate of Achievement</title>
+  <style>
+    body {
+      background: #f9f9f9;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .certificate-container {
+      border: 10px solid #d4af37;
+      background: #fff;
+      padding: 40px 60px;
+      width: 700px;
+      box-shadow: 0 0 20px #ccc;
+      text-align: center;
+    }
+    .certificate-title {
+      font-size: 2.5em;
+      color: #d4af37;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .certificate-content {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .certificate-name {
+      font-size: 2em;
+      font-style: italic;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #000;
+      display: inline-block;
+      padding: 5px 30px;
+    }
+    .certificate-footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #555;
+    }
+    .institute {
+      font-weight: bold;
+      color: #2e4053;
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate-container">
+    <div class="certificate-title">Certificate of Achievement</div>
+    <div class="certificate-content">
+      This is to certify that
+      <div class="certificate-name">Sunny Rajput</div>
+      has successfully completed the requirements for<br>
+      <b>Dietitian and Nutritionist</b>
+    </div>
+    <div class="certificate-footer">
+      <span class="institute">[Institute Name Here]</span><br>
+      Date: <span id="date"></span>
+    </div>
+  </div>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
