@@ -1,3 +1,5 @@
+from fpdf import FPDF
+
 # Create PDF
 pdf = FPDF()
 pdf.add_page()
@@ -10,7 +12,8 @@ pdf.multi_cell(0, 10, txt="""This is to certify that
 
 Sunny Rajput
 
-has successfully completed the requirements and demonstrated the knowledge and skills necessary to be recognized as a
+has successfully completed the requirements and demonstrated the knowledge and
+skills necessary to be recognized as a
 Certified Diet and Nutrition Specialist.
 
 Awarded on April 19, 2025
